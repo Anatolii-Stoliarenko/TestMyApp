@@ -4,7 +4,6 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class DataService {
-  private currentStatus = "online";
   private dummyTrafficData = [
     {
       id: "d1",
@@ -35,10 +34,6 @@ export class DataService {
       value: 589,
     },
   ];
-
-  get status() {
-    return this.currentStatus;
-  }
 
   get data() {
     return this.dummyTrafficData;
